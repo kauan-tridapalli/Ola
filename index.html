@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        /* Reset básico para remover margens e paddings padrão */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Estilo para o corpo da página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+
+        /* Estilo para a tabela */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Estilo para as células da tabela */
+        td {
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Efeito de hover nas células da tabela */
+        td:hover {
+            background-color: #f1f1f1;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilo para o texto "Olá Mundo" */
+        td:first-child {
+            font-weight: bold;
+            color: #6a11cb;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            table {
+                width: 95%;
+            }
+
+            td {
+                font-size: 1.2em;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            td {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Ola mundo</td>
+        </tr>
+    </table>
+</body>
+</html>
